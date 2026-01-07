@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ram Naam Jap</title>
+
+  <!-- PWA -->
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#000000">
+  <link rel="icon" href="icon-192.png">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="bg">
+    <div class="overlay"></div>
+
+    <div class="app">
+      <!-- header -->
+      <div class="header">
+        <div class="controls">
+          <button id="soundBtn">🔊 Sound ON</button>
+          <button id="vibrateBtn">📳 Vibrate ON</button>
+        </div>
+        <div class="lifetime">
+          <small>Lifetime Jap</small>
+          <div id="lifetimeCount">0</div>
+        </div>
+      </div>
+
+      <div class="session">
+        <small>Session Total</small>
+        <div id="sessionCount">0</div>
+      </div>
+
+      <div id="insight" class="insight hidden"></div>
+
+      <button id="mainBtn" class="main-btn">
+        <span>राम</span>
+        <small>नाम</small>
+      </button>
+
+      <button id="resetBtn" class="reset">Reset Session</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+
+  <!-- SERVICE WORKER -->
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('sw.js');
+    }
+  </script>
+</body>
+</html>
