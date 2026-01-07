@@ -23,7 +23,7 @@ body {
   position: relative;
   width: 100%;
   min-height: 100dvh;
-  background-image: url("ram.png");
+  background-image: url("logo.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -208,3 +208,4 @@ body {
     max-width: 560px;
   }
 }
+
