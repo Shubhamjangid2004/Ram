@@ -110,7 +110,7 @@ const FILES = [
   "./index.html",
   "./style.css",
   "./script.js",
-  "./ram.png",
+  "./logo.png",
   "./manifest.json",
   "./icon-192.png",
   "./icon-512.png"
@@ -129,3 +129,4 @@ self.addEventListener("fetch", event => {
     })
   );
 });
+
